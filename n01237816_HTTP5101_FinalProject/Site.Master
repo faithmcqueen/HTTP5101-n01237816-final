@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="n01237816_HTTP5101_FinalProject.SiteMaster" %>
+<%@ Register Src="~/PostList.ascx" TagName="PostList" TagPrefix="asp"%>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Faith McQueen</title>
+    <link rel="stylesheet" type="text/css" href="/Content/Site.css" />
+</head>
+<body>
+    <header>
+        <h2 class="sitename">Faith McQueen</h2>
+        <asp:PostList runat="server"></asp:PostList>
+    </header>
+     <div class="cwidth">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </div>
+    <footer>
+        <div>HTTP5101 Final Assignment | Faith McQueen (n01237816)</div>
+        <div class="copyright">Copyright &copy; 2019</div>
+    </footer>
+</body>
+
